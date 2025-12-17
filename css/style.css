@@ -14,6 +14,9 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #6B46C1;
     color: white;
     padding: 20px;
@@ -31,6 +34,8 @@ p {
 }
 
 nav ul {
+    display: flex;
+    gap: 20px;
     list-style: none;
     background-color: #EDF2F7;
     padding: 10px;
@@ -45,7 +50,26 @@ main {
 main section {
     padding: 20px;
 
+}
 
+.projetos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.projetos-grid figure {
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.projetos-grid img {
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
 }
 
 footer {
