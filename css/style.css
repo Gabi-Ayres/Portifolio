@@ -1,0 +1,63 @@
+
+
+* {
+    box-sizing: border-box; /* Aplicando o Reset */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; /* Restruturando tudo apartir daqui*/
+    line-height: 1.6;
+    color: #2D3748;
+    background-color: white;
+}
+
+header {
+    background-color: #6B46C1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+p {
+    color: #2D3748;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #EDF2F7;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main section {
+    padding: 20px;
+
+
+}
+
+footer {
+    background-color: #2D3748;
+    text-align: center;
+    padding: 15px;
+    
+}
+
+.rodape {
+    color: white;
+    font-size: 10px;
+
+}
+
