@@ -1,99 +1,324 @@
-
-
 * {
-    box-sizing: border-box; /* Aplicando o Reset */
+  box-sizing: border-box; /* Aplicando o Reset */
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif; /* Restruturando tudo apartir daqui*/
-    line-height: 1.6;
-    color: #2D3748;
-    background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif; /* Restruturando tudo apartir daqui*/
+  line-height: 1.6;
+  color: #2d3748;
+  background-color: #edf2f7;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #6B46C1;
-    color: white;
-    padding: 20px;
-    text-align: center;
+.botao {
+  margin-top: 20px;
+  width: 16%;
+  padding: 12px;
+  background-color: #6b46c1;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6b46c1;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+  flex-direction: column;
+  background-image: url("../imagens/back.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+
+.nome-header {
+  font-size: 64px;
+  color: white;
+}
+
+.paragrafo-header {
+  margin-top: -40px;
+  display: flex;
+  font-size: 16px;
+  text-align: center;
+}
+
+.frase-header {
+  display: flex;
+  color: #ffff;
+  font-size: 24px;
+}
+
+.titulos {
+  display: flex;
+  font-size: 42px;
+  font-weight: 900;
+}
+
+.header img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid white;
 }
 
 p {
-    color: #2D3748;
-    text-align: justify;
+  color: #2d3748;
+  text-align: justify;
 }
 
 nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    background-color: #EDF2F7;
-    padding: 10px;
-    text-align: center;
-    justify-content: space-around;
-    
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  /*background-color: #EDF2F7;*/
+  padding: 10px;
+  text-align: center;
+  justify-content: space-around;
+}
+
+li a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+.conteudo-sobre-mim {
+  display: flex;
+  align-items: center; /* Centra a imagem com o texto */
+  gap: 50px; /* Espaço generoso no meio */
+  padding: 50px 0;
+}
+
+.img-perfil {
+  border-radius: 12%;
 }
 
 main {
-    flex-grow: 1;
-    max-width: 800px;
-    margin: 0 auto;
+  flex-grow: 1;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 main section {
-    padding: 20px;
-
+  padding: 20px;
 }
 
-.projetos-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    
+.educação {
+  background-color: #edf2f7;
+}
+
+.container-img {
+  display: flex;
+  flex-wrap: row;
+  gap: 20px;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .projetos-grid figure {
-    flex: 1;
-    min-width: 250px;
-    text-align: center;
-    border-radius: 8px;
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  border-radius: 8px;
+}
 
+.projetos-grid a {
+  text-decoration: none;
+}
+
+.projetos-grid a:hover {
+  color: #bca9e9;
 }
 
 .projetos-grid img {
-    width: 300px;
-    text-align: center;
-    border-radius: 5px;
+  width: 300px;
+  text-align: center;
+  border-radius: 5px;
+}
 
+.contacto {
+  background-color: #edf2f7;
+}
+
+.contacto ul {
+  display: flex;
+  direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  list-style: none;
+}
+
+.contacto a {
+  text-decoration: none;
+}
+
+.contacto a:hover {
+  color: #bca9e9;
 }
 
 footer {
-    background-color: #2D3748;
-    text-align: center;
-    padding: 15px;
-    
+  background-color: #2d3748;
+  text-align: center;
+  padding: 15px;
 }
 
-.rodape {
-    color: white;
-    font-size: 10px;
+.titulo-footer {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 29px;
+  font-weight: 900;
+  color: #ffff;
+}
+
+i {
+  color: #fff;
+  margin: 7px;
+}
+
+.footer-li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.footer-li a {
+  margin: 0px;
+}
+
+footer p {
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+
+.formulario {
+  flex: 1 1 45%;
+  font-family: sans-serif;
+  border: 2px solid #6b46c1;
+  border-radius: 8px;
 
 }
 
+.formulario fieldset {
+  border: 2px solid #6b46c1;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.formulario legend {
+  padding: 0 10px;
+  font-weight: bold;
+  color: #6b46c1;
+  font-size: 1.2rem;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+
+.container-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.contacto-img {
+  flex: 1 1 45%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacto-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Cada campo com seu tamanhos iguais */
+
+.formulario input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+.formulario select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+/* torna cada campo mais escuro a medida que vai passando pelos campos */
+.formulario input:focus {
+  outline: none;
+  border-color: #6b46c1;
+  box-shadow: 0 0 0 2px rgba(107, 70, 193, 0.2);
+}
+
+.formulario select:focus {
+  outline: none;
+  border-color: #6b46c1;
+  box-shadow: 0 0 0 2px rgba(107, 70, 193, 0.2);
+}
+
+.formulario textarea:focus {
+  outline: none;
+  border-color: #6b46c1;
+  box-shadow: 0 0 0 2px rgba(107, 70, 193, 0.2);
+}
+
+/* Botão */
+.formulario button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #6b46c1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Qdo passa o rato encima mudar a cor*/
+.formulario button:hover {
+  background-color: #553c9a;
+}
 /* iniciar na parte de estilizar o botão das <figure> */
-
