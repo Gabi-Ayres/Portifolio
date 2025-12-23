@@ -1,45 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contactos de Gabriella Ayres</title>
-</head>
-<body>
-
-    <form onsubmit="enviarForm(event)">
-        <fieldset>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="container-contacto">
+      <section>
+        <form class="formulario" onsubmit="enviarForm(event)">
+          <fieldset>
             <legend>Contacto</legend>
-                <label for="nome">Nome:</label>
-                      <input id="nome" type="text" placeholder="Digite seu nome" name="nome" required>
+            <label for="nome">Nome:</label>
+            <input
+              id="nome"
+              type="text"
+              placeholder="Digite seu nome"
+              name="nome"
+              required
+            />
 
-    
-                <label for="email">Email:</label>
-                      <input id="email" type="email" placeholder="Digite seu email" name="email" required>
-        
-                <label for="assunto">Assunto:</label>
-                         <select id="assunto" name="assunto">
-                             <option value="">Selecione uma opção:</option>
-                             <option value="recrutamento">Recrutamento</option>
-                             <option value="freelance">Freelance</option>
-                             <option value="outros">Outros</option>
-                
-                         </select>
+            <label for="email">Email:</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Digite seu email"
+              name="email"
+              required
+            />
 
-                <label for="mensagem">Mensagem</label>
-            
-                     <textarea id="mensagem" placeholder="Escreva aqui a sua proposta" name="mensagem" rows="5" required minlength="10"></textarea>
-                     
-                    <button type="submit">Enviar Mensagem 🚀</button>
+            <label for="assunto">Assunto:</label>
+            <select id="assunto" name="assunto">
+              <option value="">Selecione uma opção:</option>
+              <option value="recrutamento">Recrutamento</option>
+              <option value="freelance">Freelance</option>
+              <option value="outros">Outros</option>
+            </select>
 
-        </fieldset>
-    </form>
-    
-    <script> 
-        function enviarForm(event) {
-            event.preventDefault()
-            alert("Obrigado pelo contacto! Responderei em breve.")
-        }
+            <label for="mensagem">Mensagem</label>
+
+            <textarea
+              id="mensagem"
+              placeholder="Escreva aqui a sua proposta"
+              name="mensagem"
+              rows="5"
+              required
+              minlength="10"
+            ></textarea>
+
+            <button type="submit">Enviar Mensagem 🚀</button>
+          </fieldset>
+        </form>
+      </section>
+      <section class="contacto-img">
+        <img
+          src="imagens/2308-w030-n003-821A-p30-821.jpg"
+          alt="Computador-Emails"
+        />
+        <a
+          href="https://br.freepik.com/vetores-gratis/computador-com-icone-de-elemento-de-correio-vetor-de-desenho-animado-laptop-isolado-com-envelope-e-objeto-grafico-de-carta-nova-mensagem-de-bate-papo-no-monitor-de-dispositivo-de-desktop-alerta-de-notificacao-digital-para-caixa-de-entrada-no-site_77936629.htm"
+          >Imagem de upklyak no Freepik</a
+        >
+      </section>
+    </section>
+    <script>
+      function enviarForm(event) {
+        event.preventDefault();
+        alert("Obrigado pelo contacto! Responderei em breve.");
+      }
     </script>
-</body>
+  </body>
 </html>
