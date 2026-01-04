@@ -1,5 +1,12 @@
 * {
   box-sizing: border-box; /* Aplicando o Reset */
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+  }
 }
 
 body {
@@ -8,28 +15,11 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  width: 100%;
   font-family: "Roboto", sans-serif; /* Restruturando tudo apartir daqui*/
   line-height: 1.6;
   color: #2d3748;
   background-color: #edf2f7;
-}
-
-.botao {
-  margin-top: 20px;
-  width: 16%;
-  padding: 12px;
-  background-color: #6b46c1;
-  color: white;
-  border: none;
-  border-radius: 9px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.botao:hover a {
-  color: palevioletred;
 }
 
 .header {
@@ -38,19 +28,23 @@ body {
   align-items: center;
   background-color: #6b46c1;
   gap: 20px;
-  padding: 20px;
+  padding: 16px;
   text-align: center;
   flex-direction: column;
-  background-image: url("../imagens/back.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.7;
 }
 
 .nome-header {
-  font-size: 64px;
+  font-size: 51px;
   color: white;
+}
+
+.header img {
+  max-width: 100%;
+  height: auto;
+}
+
+.paragrafo-header {
+  margin-top: 12px;
 }
 
 .paragrafo-header {
@@ -75,8 +69,6 @@ body {
 .header img {
   max-width: 100%;
   height: auto;
-  border-radius: 50%;
-  border: 4px solid white;
 }
 
 p {
@@ -86,12 +78,35 @@ p {
 
 nav ul {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
   list-style: none;
   /*background-color: #EDF2F7;*/
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   justify-content: space-around;
+}
+
+.botao {
+  margin-top: 20px;
+  width: 16%;
+  padding: 12px;
+  background-color: #6b46c1;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.botao:hover a {
+  color: palevioletred;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+  font-size: 1.1rem;
 }
 
 li a {
@@ -101,8 +116,8 @@ li a {
 
 .conteudo-sobre-mim {
   display: flex;
-  align-items: center; /* Centra a imagem com o texto */
-  gap: 50px; /* Espaço generoso no meio */
+  align-items: center; 
+  gap: 50px; 
   padding: 50px 0;
 }
 
@@ -124,33 +139,98 @@ main section {
   background-color: #edf2f7;
 }
 
-.container-img {
-  display: flex;
-  flex-wrap: row;
-  gap: 20px;
-  justify-content: center;
-  text-decoration: none;
+.habilidades {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.skill {
+  margin-bottom: 15px;
+}
+.skill span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+.barra {
+  background: #ddd;
+  width: 100%;
+  height: 15px;
+  border-radius: 8px;
+}
+.progresso {
+  background: #6b46c1;
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.5s;
 }
 
-.projetos-grid figure {
-  flex: 1;
-  min-width: 250px;
+.carousel {
+  position: relative;
+  width: 100%; /* deixar responsivo */
+  max-width: 500px; /* largura máxima do carrossel */
+  margin: 0 auto;
+  overflow: hidden; /* garante que só apareça o que cabe */
+}
+
+.container-img {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 50px; /* espaçamento entre cartões */
+}
+
+.projeto-card {
+  flex: 0 0 300px; /* largura mínima do cartão */
   text-align: center;
+}
+
+figcaption {
+  margin-top: 15px;
+}
+
+.projeto-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-radius: 8px;
 }
 
-.projetos-grid a {
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #6b46c1;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 6px;
+  z-index: 10;
+}
+
+button.prev {
+  left: -10px;
+}
+
+button.next {
+  right: -10px;
+}
+
+.botao-projeto {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #6b46c1;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
   text-decoration: none;
-}
-
-.projetos-grid a:hover {
-  color: #bca9e9;
-}
-
-.projetos-grid img {
-  width: 300px;
-  text-align: center;
-  border-radius: 5px;
+  transition: font-size 0.3s ease-in-out;
 }
 
 .contacto {
@@ -181,10 +261,11 @@ footer {
 
 .titulo-footer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   font-size: 29px;
   font-weight: 900;
   color: #ffff;
+  margin: 0;
 }
 
 i {
@@ -192,11 +273,25 @@ i {
   margin: 7px;
 }
 
+.footer-ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-li:hover {
+ font-size: 1.1rem;
+}
+
+
 .footer-li {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
+
 .footer-li a {
   margin: 0px;
 }
@@ -212,7 +307,6 @@ footer p {
   font-family: sans-serif;
   border: 2px solid #6b46c1;
   border-radius: 8px;
-
 }
 
 .formulario fieldset {
@@ -235,7 +329,6 @@ footer p {
   font-weight: 600;
   color: #2d3748;
 }
-
 
 .container-contacto {
   display: flex;
@@ -261,25 +354,10 @@ footer p {
   border-radius: 8px;
 }
 
-/* Cada campo com seus tamanhos iguais */
-
-.formulario input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #cbd5e0;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-family: inherit;
-}
-.formulario select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #cbd5e0;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-family: inherit;
-}
-.formulario textarea {
+.formulario input,
+.formulario select,
+.formulario textarea
+ {
   width: 100%;
   padding: 10px;
   border: 1px solid #cbd5e0;
@@ -289,25 +367,14 @@ footer p {
 }
 
 /* torna cada campo mais escuro a medida que vai passando pelos campos */
-.formulario input:focus {
-  outline: none;
-  border-color: #6b46c1;
-  box-shadow: 0 0 0 2px rgba(107, 70, 193, 0.2);
-}
-
-.formulario select:focus {
-  outline: none;
-  border-color: #6b46c1;
-  box-shadow: 0 0 0 2px rgba(107, 70, 193, 0.2);
-}
-
+.formulario input:focus,
+.formulario select:focus,
 .formulario textarea:focus {
   outline: none;
   border-color: #6b46c1;
   box-shadow: 0 0 0 2px rgba(107, 70, 193, 0.2);
 }
 
-/* Botão */
 .formulario button {
   margin-top: 20px;
   width: 100%;
@@ -321,8 +388,89 @@ footer p {
   cursor: pointer;
 }
 
-/* Qdo passa o rato encima mudar a cor*/
 .formulario button:hover {
   background-color: #553c9a;
 }
-/* iniciar na parte de estilizar o botão das <figure> */
+
+.imagem-Freepik {
+  font-size: 7px;
+}
+
+/* --- MEDIA QUERIES PARA RESPONSIVIDADE --- */
+
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+    overflow-x: hidden; /* Corta qualquer coisa que tente sair do main */
+  }
+
+  /* 1. Header */
+  .nome-header {
+    font-size: 28px; /* Reduzi um pouco mais para garantir que cabe */
+  }
+  .frase-header {
+    font-size: 18px;
+  }
+
+  /* 2. Navegação */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .botao {
+    width: 90%;
+    margin: 5px 0;
+  }
+
+  /* 3. Sobre Mim*/
+  .conteudo-sobre-mim {
+    flex-direction: column;
+    padding: 10px; /* Reduzi o padding lateral */
+    gap: 20px;
+    align-items: center;
+    width: 100%; /* Garante que o container não exceda a tela */
+    box-sizing: border-box;
+  }
+
+  .paragrafos-sobre-mim p {
+    text-align: justify;
+    font-size: 16px;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .img-perfil {
+    max-width: 280px; /* Um pouco menor para dar espaço ao texto */
+    width: 90%;
+    height: auto;
+  }
+
+  /* 4. Carrossel */
+  .projeto-card {
+    flex: 0 0 80vw; /* Largura baseada na tela do telemóvel */
+  }
+  .container-img {
+    gap: 20px;
+  }
+
+  /* 5. Footer */
+  .contatos {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  iframe {
+    width: 100%;
+    height: 250px;
+  }
+}

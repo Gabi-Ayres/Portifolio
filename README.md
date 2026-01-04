@@ -6,7 +6,7 @@ O projeto foi criado como parte do meu processo de aprendizagem e evolução com
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - Página inicial com apresentação pessoal
 - Secção **Sobre Mim**
@@ -21,7 +21,7 @@ O projeto foi criado como parte do meu processo de aprendizagem e evolução com
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **HTML5** – Estrutura semântica
 - **CSS3** – Estilização, Flexbox e Media Queries
@@ -30,13 +30,7 @@ O projeto foi criado como parte do meu processo de aprendizagem e evolução com
 - **Font Awesome**
 
 ---
-
-## 📁 Estrutura do Projeto
-
-
----
-
-## 🚀 Como Executar o Projeto
+##  Como Executar o Projeto
 
 1. Clona este repositório:
    ```bash
