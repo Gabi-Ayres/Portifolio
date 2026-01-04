@@ -182,6 +182,7 @@ main section {
 .projeto-card {
   flex: 0 0 300px; /* largura mínima do cartão */
   text-align: center;
+  margin: 50px;
 }
 
 figcaption {

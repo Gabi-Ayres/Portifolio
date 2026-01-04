@@ -35,3 +35,10 @@ O projeto foi criado como parte do meu processo de aprendizagem e evolução com
 1. Clona este repositório:
    ```bash
    git clone https://github.com/Gabi-Ayres/Portifolio.git
+
+## Fontes de Pesquisa
+
+https://www.w3schools.com/html/default.asp
+https://www.w3schools.com/css/default.asp
+https://www.w3schools.com/js/default.asp
+https://accessmonitor.acessibilidade.gov.pt/
