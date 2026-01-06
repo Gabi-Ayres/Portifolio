@@ -80,8 +80,8 @@
         </div>
       </section>
 
-      <section class="educação">
-        <h2 class="titulos">Educação</h2>
+      <section class="educacao">
+        <h2 class="titulos">Educacao</h2>
         <ol>
           <li>Enfermeira - FACENE - 2010</li>
           <li>HTML, CSS, JavaScript - Curso Online Eu ProgrAmo - 2021</li>
@@ -194,7 +194,7 @@
             <li class="footer-li">
               <i class="fa-solid fa-at"></i>
               <a href="mailto:gabi.maia.pimentel@gmail.com"
-                >gabi.maia.pimental@gmail.com</a
+                >gabi.maia.pimentel@gmail.com</a
               >
             </li>
             <li class="footer-li">
@@ -233,7 +233,7 @@
       const prev = document.querySelector(".prev");
 
       let index = 0;
-      const gap = 100;
+      const gap = 100; /*gap diferente do css */
       const cardWidth = cards[0].offsetWidth + gap;
 
       next.addEventListener("click", () => {
@@ -244,21 +244,6 @@
       });
 
       prev.addEventListener("click", () => {
-        if (index > 0) {
-          index--;
-          container.style.transform = `translateX(-${index * cardWidth}px)`;
-        }
-      });
-
-      window.addEventListener("resize", () => {
-        const cardWidth = cards[0].offsetWidth + gap;
-        container.style.transform = `translateX(-${index * cardWidth}px)`;
-      });
-
-      prev.addEventListener("click", () => {
-        const gap = window.innerWidth <= 768 ? 20 : 100;
-        const cardWidth = cards[0].offsetWidth + gap;
-
         if (index > 0) {
           index--;
           container.style.transform = `translateX(-${index * cardWidth}px)`;

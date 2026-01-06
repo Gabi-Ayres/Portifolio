@@ -1,4 +1,4 @@
-# 🌐 Portfólio de Gabriella Ayres
+# Portfólio de Gabriella Ayres
 
 Este repositório contém o código do meu **site portfólio pessoal**, desenvolvido com o objetivo de apresentar o meu perfil, percurso académico, progresso técnico e alguns projetos em Front-End.
 

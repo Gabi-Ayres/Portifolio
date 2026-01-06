@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box; /* Aplicando o Reset */
+}
+
   a,
   a:link,
   a:visited,
@@ -7,7 +9,6 @@
   a:active {
     text-decoration: none;
   }
-}
 
 body {
   display: flex;
@@ -36,15 +37,6 @@ body {
 .nome-header {
   font-size: 51px;
   color: white;
-}
-
-.header img {
-  max-width: 100%;
-  height: auto;
-}
-
-.paragrafo-header {
-  margin-top: 12px;
 }
 
 .paragrafo-header {
@@ -135,7 +127,7 @@ main section {
   padding: 20px;
 }
 
-.educação {
+.educacao {
   background-color: #edf2f7;
 }
 
@@ -235,11 +227,11 @@ button.next {
   transition: font-size 0.3s ease-in-out;
 }
 
-.contacto {
+.contactos {
   background-color: #edf2f7;
 }
 
-.contacto ul {
+.contactos ul {
   display: flex;
   direction: row;
   justify-content: space-between;
@@ -247,11 +239,11 @@ button.next {
   list-style: none;
 }
 
-.contacto a {
+.contactos a {
   text-decoration: none;
 }
 
-.contacto a:hover {
+.contactos a:hover {
   color: #bca9e9;
 }
 
