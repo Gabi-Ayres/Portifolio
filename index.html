@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pórtfolio de Gabriella Ayres</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
     <header class="header">
-      <img src="imagens/back.jpg" alt="Foto de um teclado" />
+      <img src="assets/imagens/back.jpg" alt="Foto de um teclado" />
       <h1 class="nome-header">Gabriella Maia Pimentel Ayres</h1>
       <p class="paragrafo-header">
         <em class="frase-header"
@@ -38,7 +38,7 @@
         <div class="conteudo-sobre-mim">
           <img
             class="img-perfil"
-            src="imagens/foto.jpeg"
+            src="assets/imagens/foto.jpeg"
             alt="Foto de Gabriella Ayres"
             width="500"
             height="500"
@@ -138,7 +138,7 @@
 
           <div class="container-img">
             <figure class="projeto-card">
-              <img src="imagens/site-noticias.jpg" alt="Site de Noticias" />
+              <img src="assets/imagens/site-noticias.jpg" alt="Site de Noticias" />
 
               <figcaption>
                 <a
@@ -152,7 +152,7 @@
             </figure>
 
             <figure class="projeto-card">
-              <img src="imagens/site-receitas.png" alt="Site de Receitas" />
+              <img src="assets/imagens/site-receitas.png" alt="Site de Receitas" />
 
               <figcaption>
                 <a
@@ -164,7 +164,7 @@
             </figure>
 
             <figure class="projeto-card">
-              <img src="imagens/site-tarefas.png" alt="Aplicativo de Tarefas" />
+              <img src="assets/imagens/site-tarefas.png" alt="Aplicativo de Tarefas" />
 
               <figcaption>
                 <a
@@ -233,7 +233,7 @@
       const prev = document.querySelector(".prev");
 
       let index = 0;
-      const gap = 100; /*gap diferente do css */
+      const gap = 100; /*gap diferente do css  pq se mudo fica pior o carrusel */
       const cardWidth = cards[0].offsetWidth + gap;
 
       next.addEventListener("click", () => {
