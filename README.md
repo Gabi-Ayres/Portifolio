@@ -1,6 +1,7 @@
 # Portfólio de Gabriella Ayres
 
 **Projeto:** Portfólio
+
 **Módulo 2:** Fundamentos da Programação Web
 
 ## Autora do Projeto
