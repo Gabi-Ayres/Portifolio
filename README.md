@@ -1,14 +1,17 @@
 # Portfólio de Gabriella Ayres
 
-## Autorora do Projeto
+**Projeto:** Portfólio
+**Módulo 2:** Fundamentos da Programação Web
+
+## Autora do Projeto
 **Nome:** Gabriella Ayres
 
 ## Repositório
-**Link do Repositorio:**[Portfólio](https://github.com/Gabi-Ayres/Portifolio.git)
+**Link do Repositorio:** [Portfólio](https://github.com/Gabi-Ayres/Portifolio.git)
 
-Este repositório contém o código do meu site portfólio pessoal, desenvolvido com o objetivo de apresentar o meu perfil, percurso académico, progresso técnico e, à medida que forem sendo desenvolvidos, os meus projetos.
+**Objetivo:** _Este repositório contém o código do meu site portfólio pessoal, desenvolvido com o objetivo de apresentar o meu perfil, percurso académico, progresso técnico e, à medida que forem sendo desenvolvidos, os meus projetos._
 
-O projeto foi criado como parte do meu processo de aprendizagem e evolução como programadora, com foco em **HTML, CSS e JavaScript**, seguindo boas práticas de estrutura, semântica e responsividade.
+_O projeto foi criado como parte do meu processo de aprendizagem e evolução como programadora, com foco em **HTML, CSS e JavaScript**, seguindo boas práticas de estrutura, semântica e responsividade._
 
 ---
 
@@ -48,7 +51,7 @@ O projeto foi criado como parte do meu processo de aprendizagem e evolução com
 
 3. Abre o ficheiro `index.html` no navegador:
 
-   Duplo clique no ficheiro
+   (Duplo clique no ficheiro)
 
 ---   
 
@@ -56,7 +59,7 @@ O projeto foi criado como parte do meu processo de aprendizagem e evolução com
 
 ### Uso de HTML Semântico
 
-- Foram utilizadas tags como <header>, <nav>, <main>, <section> e <footer> para melhorar:
+- Foram utilizadas tags como header, nav, main, section e footer para melhorar:
 
    * Acessibilidade;
 
@@ -69,8 +72,6 @@ O projeto foi criado como parte do meu processo de aprendizagem e evolução com
 - Optei por Flexbox pela sua flexibilidade na criação de layouts adaptáveis, complementado com Media Queries para garantir uma boa experiência em:
 
    * Desktop;
-
-   * Tablet;
 
    * Telemóvel.
 
