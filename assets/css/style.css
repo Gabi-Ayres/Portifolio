@@ -360,7 +360,6 @@ footer p {
   font-family: inherit;
 }
 
-/* torna cada campo mais escuro a medida que vai passando pelos campos */
 .formulario input:focus,
 .formulario select:focus,
 .formulario textarea:focus {
